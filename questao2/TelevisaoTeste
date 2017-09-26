@@ -1,0 +1,26 @@
+#include "Televisao.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    Televisao t1= Televisao(1,3);
+
+    int v,c;
+    cout << "Digite um canal " << endl;
+    cin>>c;
+
+     cout << "Digite um volume" << endl;
+    cin>> v;
+
+    t1.setCanal(c);
+    t1.setVolume(v);
+
+    cout << "Volume " << t1.getVolume()<<endl;
+    cout<< " Canal "<<t1.getCanal()<< endl ;
+
+    t1.alteraVolume(t1.getVolume());
+    t1.alteraCanal(t1.getCanal());
+
+return 0;
+}
